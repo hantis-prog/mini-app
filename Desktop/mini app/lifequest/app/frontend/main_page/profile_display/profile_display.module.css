@@ -1,0 +1,54 @@
+/* Контейнер профиля: flex, выравнивание по центру */
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Аватар: круглый, с фиолетовой рамкой */
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #6c5ce7;
+  background: #f0f0f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Заглушка аватара */
+.avatarPlaceholder {
+  font-size: 24px;
+}
+
+/* Блок информации о пользователе */
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Никнейм пользователя */
+.nickname {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* Контейнер тегов */
+.tags {
+  display: flex;
+  gap: 6px;
+}
+
+/* Отдельный тег */
+.tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #f0f0f5;
+  color: #6c5ce7;
+  border-radius: 10px;
+  font-weight: 500;
+}

@@ -1,0 +1,39 @@
+/* Основной контейнер строки состояния: flex, белый фон, тень */
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  gap: 16px;
+}
+
+/* Левая и правая секции: содержат элементы в строку */
+.leftSection,
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Центральная секция: занимает всё свободное место, выравнивание по центру */
+.centerSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Адаптив для мобильных: перенос элементов, профиль уходит вниз */
+@media (max-width: 768px) {
+  .statusBar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .centerSection {
+    order: 3;
+    flex-basis: 100%;
+  }
+}

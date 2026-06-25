@@ -1,0 +1,65 @@
+/* Карточка задания: светлый фон, скруглённые углы, плавные переходы */
+.taskCard {
+  background: #f8f9fc;
+  border-radius: 14px;
+  padding: 14px 18px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+/* Эффект при наведении: фиолетовая рамка, сдвиг вправо */
+.taskCard:hover {
+  border-color: #6c5ce7;
+  background: #f0f0fa;
+  transform: translateX(4px);
+}
+
+/* Содержимое карточки: чекбокс и информация в строку */
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Чекбокс задания: квадратный, с рамкой */
+.taskCheckbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d0d0e0;
+  border-radius: 6px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Эффект при наведении на чекбокс */
+.taskCheckbox:hover {
+  border-color: #6c5ce7;
+  background: #f0f0fa;
+}
+
+/* Блок информации: название и сложность по краям */
+.taskInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Название задания */
+.taskTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Бейдж сложности */
+.taskDifficulty {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  white-space: nowrap;
+}

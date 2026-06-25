@@ -1,0 +1,23 @@
+/* Бейдж тарифа: золотой градиент, тёмный текст */
+.tariffBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #1a1a2e;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+/* Иконка короны */
+.tariffIcon {
+  font-size: 14px;
+}
+
+/* Название тарифа */
+.tariffName {
+  font-size: 13px;
+}

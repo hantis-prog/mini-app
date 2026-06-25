@@ -12,7 +12,7 @@ export default function Home() {
             Нажмите кнопку ниже, чтобы начать
           </p>
           <Link
-            href="/frontend/hobbies_page"
+            href="/frontend/main_page"
             className="flex h-12 items-center justify-center gap-2 rounded-full bg-foreground px-8 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium"
           >
             Начать
