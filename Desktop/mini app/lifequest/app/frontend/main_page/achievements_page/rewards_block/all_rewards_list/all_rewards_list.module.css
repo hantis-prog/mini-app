@@ -1,0 +1,31 @@
+/* Контейнер списка всех наград со скроллом */
+.allRewardsContainer {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-content: flex-start;
+  padding-right: 8px;
+  min-height: 0;
+}
+
+/* Кастомный скроллбар */
+.allRewardsContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.allRewardsContainer::-webkit-scrollbar-track {
+  background: #f0f0f5;
+  border-radius: 10px;
+}
+
+.allRewardsContainer::-webkit-scrollbar-thumb {
+  background: #c0c0d0;
+  border-radius: 10px;
+}
+
+.allRewardsContainer::-webkit-scrollbar-thumb:hover {
+  background: #a0a0b0;
+}

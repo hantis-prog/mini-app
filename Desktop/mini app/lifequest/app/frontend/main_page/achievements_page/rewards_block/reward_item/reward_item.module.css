@@ -1,0 +1,46 @@
+/* Карточка награды: фиксированный размер, не сжимается */
+.rewardCard {
+  width: 140px;
+  height: 140px;
+  min-width: 140px; /* ← не сжимается при скролле */
+  background: linear-gradient(135deg, #f0f0f5 0%, #e8e8f0 100%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0; /* ← не сжимается */
+  scroll-snap-align: start;
+}
+
+/* Иконка награды */
+.rewardIcon {
+  font-size: 42px;
+}
+
+/* Информация о награде */
+.rewardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Название награды */
+.rewardName {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a2e;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Процент игроков */
+.playersPercent {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+}

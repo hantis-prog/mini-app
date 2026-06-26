@@ -7,6 +7,7 @@ import DailyTask from './daily_task/daily_task';
 import PersonalTask from './personal_task/personal_task';
 import SettingsButton from './settings_button/settings_button';
 import TasksPage from './tasks_page/tasks_page';
+import AchievementsPage from './achievements_page/achievements_page';
 import styles from './mainPage.module.css';
 
 const PERSONAL_TASKS = [
@@ -46,6 +47,7 @@ export default function MainPage() {
         )}
 
         {activeTab === 'задания' && <TasksPage />}
+        {activeTab === 'достижения' && <AchievementsPage />}
       </div>
 
       <SettingsButton />
