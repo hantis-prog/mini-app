@@ -1,0 +1,48 @@
+/* Контейнер страницы профиля */
+.profileContainer {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Левая половина */
+.leftColumn {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Правая половина */
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Верхний ряд: уровень + серия */
+.topRow {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 900px) {
+  .profileContainer {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+  }
+}
