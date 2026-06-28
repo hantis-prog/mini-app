@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+Add-Content -Path .gitignore -Value ""
+Add-Content -Path .gitignore -Value "# Дополнительно"
+Add-Content -Path .gitignore -Value "node_modules/"
+Add-Content -Path .gitignore -Value ".next/"
