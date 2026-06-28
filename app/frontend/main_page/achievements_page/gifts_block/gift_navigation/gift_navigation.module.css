@@ -1,0 +1,41 @@
+/* Навигация между подарками */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Кнопка навигации */
+.navButton {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e8e8f0;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6c5ce7;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:hover {
+  background: #f0f0fa;
+  border-color: #6c5ce7;
+  transform: scale(1.05);
+}
+
+.navButton:active {
+  transform: scale(0.95);
+}
+
+/* Счетчик подарков */
+.counter {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}

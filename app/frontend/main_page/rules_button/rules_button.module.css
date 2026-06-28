@@ -1,0 +1,38 @@
+.rulesButton {
+  position: fixed;
+  bottom: 24px;
+  left: 144px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease-in-out;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.rulesButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.rulesIcon {
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .rulesButton {
+    bottom: 90px;
+    left: 124px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .rulesIcon {
+    font-size: 20px;
+  }
+}

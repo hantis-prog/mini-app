@@ -1,0 +1,43 @@
+/* Контейнер XP-дисплея: колонка, минимальная ширина */
+.xpContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+}
+
+/* Текстовая метка XP */
+.xpLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c5ce7;
+}
+
+/* Иконка молнии */
+.xpIcon {
+  font-size: 14px;
+}
+
+/* Текст XP */
+.xpText {
+  font-size: 13px;
+}
+
+/* Фон прогресс-бара */
+.xpBar {
+  height: 8px;
+  background: #e8e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Заполненная часть прогресс-бара с градиентом */
+.xpFill {
+  height: 100%;
+  background: linear-gradient(90deg, #6c5ce7 0%, #a29bfe 100%);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}

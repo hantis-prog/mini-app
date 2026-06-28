@@ -1,0 +1,48 @@
+/* Контейнер наград: горизонтальный скролл, одна строка */
+.recentRewards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Убираем min-width чтобы контейнер не растягивался */
+}
+
+/* Кастомный горизонтальный скроллбар */
+.recentRewards::-webkit-scrollbar {
+  height: 6px;
+}
+
+.recentRewards::-webkit-scrollbar-track {
+  background: #f0f0f5;
+  border-radius: 10px;
+}
+
+.recentRewards::-webkit-scrollbar-thumb {
+  background: #c0c0d0;
+  border-radius: 10px;
+}
+
+.recentRewards::-webkit-scrollbar-thumb:hover {
+  background: #a0a0b0;
+}
+
+/* Пустое состояние */
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  flex-shrink: 0;
+}
+
+.emptyText {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+  margin: 0;
+}

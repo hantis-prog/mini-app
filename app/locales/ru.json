@@ -1,0 +1,287 @@
+{
+  "common": {
+    "back": "← Назад",
+    "continue": "Продолжить",
+    "start": "Начать",
+    "change": "Сменить",
+    "aboutDeveloper": "О разработчике",
+    "loading": "Загрузка..."
+  },
+
+  "navigation": {
+    "home": "Главная",
+    "tasks": "Задания",
+    "achievements": "Достижения",
+    "shop": "Магазин",
+    "profile": "Профиль"
+  },
+
+  "statusBar": {
+    "xp": "XP",
+    "level": "LVL",
+    "premium": "Premium",
+    "defaultStatus": "Обычный"
+  },
+
+  "home": {
+    "title": "Ежедневные задания",
+    "dailyTask": {
+      "badge": "Задание дня",
+      "title": "Завершить проект",
+      "description": "Завершите текущий проект до конца дня, чтобы получить бонусные очки и повысить свой уровень.",
+      "button": "Открыть задание →"
+    },
+    "personalTasks": [
+      {
+        "id": 1,
+        "title": "Прочитать 10 страниц",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "title": "Сделать зарядку",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "title": "Выучить 5 новых слов",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "title": "Написать код 30 минут",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "title": "Пробежать 3 км",
+        "difficulty": "hard"
+      }
+    ]
+  },
+
+  "tasks": {
+    "current": "Текущие задания",
+    "past": "Прошедшие задания",
+    "empty": "Здесь пока пусто",
+    "dailyTask": {
+      "title": "Завершить проект",
+      "description": "Завершите текущий проект до конца дня"
+    },
+    "personalTasks": [
+      {
+        "id": 1,
+        "title": "Прочитать 10 страниц",
+        "difficulty": "easy",
+        "status": "done"
+      },
+      {
+        "id": 2,
+        "title": "Сделать зарядку",
+        "difficulty": "easy",
+        "status": "done"
+      },
+      {
+        "id": 3,
+        "title": "Выучить 5 новых слов",
+        "difficulty": "medium",
+        "status": "pending"
+      },
+      {
+        "id": 4,
+        "title": "Написать код 30 минут",
+        "difficulty": "medium",
+        "status": "notDone"
+      },
+      {
+        "id": 5,
+        "title": "Пробежать 3 км",
+        "difficulty": "hard",
+        "status": "notDone"
+      }
+    ],
+    "pastTasks": [
+      { "id": 1, "title": "Прочитать главу книги", "date": "15 янв", "status": "done" },
+      { "id": 2, "title": "Сделать 50 отжиманий", "date": "15 янв", "status": "done" },
+      { "id": 3, "title": "Написать статью", "date": "14 янв", "status": "notDone" },
+      { "id": 4, "title": "Выучить 10 слов", "date": "14 янв", "status": "done" },
+      { "id": 5, "title": "Пробежать 5 км", "date": "13 янв", "status": "done" },
+      { "id": 6, "title": "Посмотреть лекцию", "date": "13 янв", "status": "notDone" },
+      { "id": 7, "title": "Сделать уборку", "date": "12 янв", "status": "done" },
+      { "id": 8, "title": "Написать код 1 час", "date": "12 янв", "status": "done" },
+      { "id": 9, "title": "Прочитать 20 страниц", "date": "11 янв", "status": "done" },
+      { "id": 10, "title": "Сделать зарядку", "date": "11 янв", "status": "done" }
+    ]
+  },
+
+  "achievements": {
+    "rewards": "Награды",
+    "gifts": "Подарки",
+    "allAchievements": "Все достижения",
+    "noRewards": "Наград пока нет",
+    "playersPercent": "% игроков",
+    "hasBy": "есть у",
+    "players": "игроков",
+    "rewardsList": [
+      { "id": 1, "name": "Первый шаг", "icon": "🏆", "playersPercent": 45.2 },
+      { "id": 2, "name": "Мастер кода", "icon": "🎖️", "playersPercent": 12.8 },
+      { "id": 3, "name": "Книжный червь", "icon": "📚", "playersPercent": 23.5 },
+      { "id": 4, "name": "Спортсмен", "icon": "🏅", "playersPercent": 18.9 },
+      { "id": 5, "name": "Полиглот", "icon": "🌍", "playersPercent": 8.3 },
+      { "id": 6, "name": "Творец", "icon": "🎨", "playersPercent": 15.7 },
+      { "id": 7, "name": "Лидер", "icon": "👑", "playersPercent": 5.2 },
+      { "id": 8, "name": "Филантроп", "icon": "💝", "playersPercent": 11.4 }
+    ],
+    "giftsList": [
+      {
+        "id": 1,
+        "name": "Бонус опыта",
+        "description": "Получите двойной опыт за все задания на 24 часа",
+        "reward": "+100% XP на 24 часа",
+        "rarity": "common",
+        "giver": "Система"
+      },
+      {
+        "id": 2,
+        "name": "Золотой ключ",
+        "description": "Откройте любой закрытый уровень без ограничений. Действует на все премиум-контент в игре.",
+        "reward": "Доступ к премиум-контенту",
+        "rarity": "rare",
+        "giver": "Admin"
+      },
+      {
+        "id": 3,
+        "name": "Энергетик",
+        "description": "Восстановите всю энергию мгновенно",
+        "reward": "+100 энергии",
+        "rarity": "legendary",
+        "giver": "PlayerOne"
+      }
+    ],
+    "achievementsList": [
+      { "id": 1, "name": "Первые шаги", "description": "Выполните первое задание", "playersPercent": 78.5, "unlocked": true },
+      { "id": 2, "name": "Неделя активности", "description": "Выполняйте задания 7 дней подряд", "playersPercent": 34.2, "unlocked": true },
+      { "id": 3, "name": "Мастер кода", "description": "Напишите 1000 строк кода", "playersPercent": 12.8, "unlocked": true },
+      { "id": 4, "name": "Книжный червь", "description": "Прочитайте 50 книг", "playersPercent": 23.5, "unlocked": false },
+      { "id": 5, "name": "Марафонец", "description": "Пробегите 100 км", "playersPercent": 8.9, "unlocked": false },
+      { "id": 6, "name": "Полиглот", "description": "Выучите 1000 иностранных слов", "playersPercent": 5.3, "unlocked": false },
+      { "id": 7, "name": "Творец", "description": "Создайте 10 проектов", "playersPercent": 15.7, "unlocked": false },
+      { "id": 8, "name": "Легенда", "description": "Достигните 100 уровня", "playersPercent": 0.7, "unlocked": false },
+      { "id": 9, "name": "Филантроп", "description": "Помогите 100 другим игрокам", "playersPercent": 11.4, "unlocked": false },
+      { "id": 10, "name": "Перфекционист", "description": "Выполните все задания с оценкой «отлично»", "playersPercent": 3.2, "unlocked": false }
+    ]
+  },
+
+  "profile": {
+    "username": "PlayerOne",
+    "tags": ["Программист", "Геймер"],
+    "availableTags": [
+      "Программист",
+      "Геймер",
+      "Спортсмен",
+      "Читатель",
+      "Музыкант",
+      "Художник",
+      "Путешественник",
+      "Кулинар"
+    ],
+    "selectTags": "Выберите теги",
+    "email": "Email",
+    "emailValue": "player@example.com",
+    "password": "Пароль",
+    "twoFactor": "Двухфакторная аутентификация",
+    "twoFactorEnabled": "Включена",
+    "lastLogin": "Последний вход",
+    "lastLoginValue": "15 янв 2024, 14:32",
+    "level": "Уровень",
+    "levelValue": 0,
+    "levelName": "Новичок",
+    "rating": "Рейтинг",
+    "ratingValue": "0 / 12000",
+    "streak": "Серия",
+    "streakValue": "0 дней",
+    "ratingTitle": "Рейтинг",
+    "personalGoal": "Персональная цель",
+    "goalText": "Достичь 50 уровня и получить достижение «Легенда»",
+    "ratingPlayers": [
+      { "id": 1, "place": 1, "name": "ProGamer", "level": 50, "xp": 95000, "isCurrentUser": false },
+      { "id": 2, "place": 2, "name": "CodeMaster", "level": 45, "xp": 82000, "isCurrentUser": false },
+      { "id": 3, "place": 3, "name": "NightOwl", "level": 42, "xp": 75000, "isCurrentUser": false },
+      { "id": 4, "place": 4, "name": "BookWorm", "level": 38, "xp": 68000, "isCurrentUser": false },
+      { "id": 5, "place": 5, "name": "Runner", "level": 35, "xp": 62000, "isCurrentUser": false },
+      { "id": 6, "place": 6, "name": "Artist", "level": 32, "xp": 55000, "isCurrentUser": false },
+      { "id": 7, "place": 7, "name": "Musician", "level": 28, "xp": 48000, "isCurrentUser": false },
+      { "id": 8, "place": 8, "name": "Traveler", "level": 25, "xp": 42000, "isCurrentUser": false },
+      { "id": 9, "place": 9, "name": "Chef", "level": 22, "xp": 38000, "isCurrentUser": false },
+      { "id": 10, "place": 10, "name": "PlayerOne", "level": 12, "xp": 1250, "isCurrentUser": true },
+      { "id": 11, "place": 11, "name": "Newbie", "level": 5, "xp": 500, "isCurrentUser": false },
+      { "id": 12, "place": 12, "name": "Starter", "level": 3, "xp": 200, "isCurrentUser": false }
+    ]
+  },
+
+  "shop": {
+    "title": "Магазин",
+    "description": "Здесь скоро появятся товары и бонусы для улучшения вашего опыта!",
+    "comingSoon": "Скоро открытие"
+  },
+
+  "rules": {
+    "title": "Правила сервиса",
+    "placeholder": "Здесь будут описаны правила сервиса."
+  },
+
+  "about": {
+    "title": "Информация о разработчике",
+    "placeholder": "Здесь будет информация о разработчике."
+  },
+
+  "support": {
+    "title": "Поддержка",
+    "description": "Если у вас возникли вопросы или проблемы, свяжитесь с нами:",
+    "email": "📧 Email: support@lifequest.ru",
+    "telegram": "💬 Telegram: @lifequest_support"
+  },
+
+  "interests": {
+    "title": "Какие у вас увлечения?",
+    "subtitle": "Выберите 1-3 увлечения",
+    "maxError": "Можно выбрать только 3 увлечения",
+    "minError": "Выберите 1-3 увлечения",
+    "interestsList": [
+      "Чтение",
+      "Спорт",
+      "Музыка",
+      "Путешествия",
+      "Кулинария",
+      "Фотография",
+      "Рисование",
+      "Программирование",
+      "Игры",
+      "Кино",
+      "Танцы",
+      "Садоводство"
+    ]
+  },
+
+  "rarity": {
+    "common": "Обычный",
+    "rare": "Редкий",
+    "legendary": "Легендарный"
+  },
+
+  "difficulty": {
+    "easy": "Легкое",
+    "medium": "Среднее",
+    "hard": "Сложное"
+  },
+
+  "status": {
+    "done": "выполнено",
+    "pending": "на проверке",
+    "notDone": "не выполнено"
+  },
+
+  "giver": "от",
+  "reward": "Награда:",
+  "levelUnit": "Ур."
+}

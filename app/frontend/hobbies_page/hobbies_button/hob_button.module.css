@@ -1,0 +1,40 @@
+.interestButton {
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2c3e50;
+  background-color: #ffffff;
+  border: 2px solid #dcdde1;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.interestButton:hover {
+  border-color: #6c5ce7;
+  color: #6c5ce7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.15);
+}
+
+.interestButton.selected {
+  background-color: #6c5ce7;
+  border-color: #6c5ce7;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(108, 92, 231, 0.35);
+}
+
+.interestButton.selected:hover {
+  background-color: #5a4bd1;
+  border-color: #5a4bd1;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .interestButton {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

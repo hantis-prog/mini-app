@@ -1,0 +1,66 @@
+/* Карточка текущего задания - без фиксированной высоты */
+.currentTaskCard {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Убираем height: 100% */
+}
+
+/* Шапка задания */
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Бейдж "Задание дня" */
+.taskBadge {
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* Бейдж статуса */
+.statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Иконка статуса */
+.statusIcon {
+  font-size: 14px;
+}
+
+/* Текст статуса */
+.statusText {
+  font-size: 12px;
+}
+
+/* Название задания */
+.taskTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Описание задания */
+.taskDescription {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin: 0;
+}

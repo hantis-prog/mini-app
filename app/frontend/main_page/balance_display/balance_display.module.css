@@ -1,0 +1,22 @@
+/* Контейнер баланса: белый фон, рамка, скруглённые углы */
+.balanceContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  border: 2px solid #e8e8f0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/* Иконка монеты */
+.balanceIcon {
+  font-size: 14px;
+}
+
+/* Сумма баланса */
+.balanceAmount {
+  font-size: 14px;
+  color: #1a1a2e;
+}

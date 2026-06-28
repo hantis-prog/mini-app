@@ -1,0 +1,44 @@
+/* Кнопка настроек: фиксированное позиционирование внизу СЛЕВА */
+.settingsButton {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease-in-out;
+  z-index: 100;
+  padding: 0;
+}
+
+/* Эффект при наведении: поворот и увеличение */
+.settingsButton:hover {
+  transform: rotate(45deg) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Иконка шестерёнки */
+.settingsIcon {
+  font-size: 28px;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .settingsButton {
+    bottom: 90px;
+    left: 16px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .settingsIcon {
+    font-size: 24px;
+  }
+}

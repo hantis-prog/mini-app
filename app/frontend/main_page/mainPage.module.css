@@ -1,0 +1,87 @@
+/* Главный контейнер: фиксированная высота экрана, без скролла */
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+  overflow: hidden; /* ← запрет скролла всей страницы */
+}
+
+/* Центральная область: занимает всё место между шапкой и навигацией */
+.contentArea {
+  flex: 1;
+  padding: 24px 24px 110px 24px; /* ← большой отступ снизу под навигацию */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden; /* ← запрет скролла */
+  min-height: 0; /* ← важно для flex */
+}
+
+/* Ряд с двумя блоками заданий */
+.tasksRow {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  min-height: 0; /* ← важно для flex */
+  overflow: hidden;
+}
+
+/* Блок задания дня */
+.dailyTaskBlock {
+  flex: 1;
+  max-width: 450px;
+  min-height: 0;
+}
+
+/* Блок персональных заданий */
+.personalTasksBlock {
+  flex: 1.5;
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow-y: auto; /* ← скролл только внутри блока */
+  min-height: 0;
+}
+
+/* Заголовок секции */
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* Контейнер списка заданий */
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 900px) {
+  .tasksRow {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .dailyTaskBlock {
+    max-width: 100%;
+  }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .contentArea {
+    padding: 16px 16px 100px 16px;
+  }
+
+  .personalTasksBlock {
+    padding: 16px;
+  }
+}

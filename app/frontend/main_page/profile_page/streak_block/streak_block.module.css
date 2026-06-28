@@ -1,0 +1,38 @@
+/* Блок серии */
+.streakBlock {
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Иконка серии */
+.streakIcon {
+  font-size: 40px;
+}
+
+/* Информация о серии */
+.streakInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Заголовок */
+.streakTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+/* Значение */
+.streakValue {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+}

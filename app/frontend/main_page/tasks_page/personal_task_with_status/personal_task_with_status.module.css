@@ -1,0 +1,59 @@
+.taskCard {
+  background: #f8f9fc;
+  border-radius: 14px;
+  padding: 14px 18px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.taskCard:hover {
+  border-color: #6c5ce7;
+  background: #f0f0fa;
+  transform: translateX(4px);
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.taskCheckbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.checkboxIcon {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.taskInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.taskTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.taskDifficulty {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  white-space: nowrap;
+}

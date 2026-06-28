@@ -1,0 +1,235 @@
+/* Оверлей с блюром - перекрывает всю страницу */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Карточка задания - фиксированный размер */
+.card {
+  width: 500px;
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Крестик закрытия */
+.closeButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #f0f0f5;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+  padding: 0;
+}
+
+.closeButton:hover {
+  background: #e8e8f0;
+  transform: rotate(90deg);
+}
+
+/* Заголовок и сложность */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.difficultyBadge {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Контейнер описания - занимает оставшееся место */
+.descriptionContainer {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Описание задания */
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Награда */
+.rewardSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f0f0fa 0%, #e8e8f5 100%);
+  border-radius: 12px;
+  border-left: 4px solid #6c5ce7;
+  flex-shrink: 0;
+}
+
+.rewardLabel {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.rewardText {
+  font-size: 14px;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+/* Область доказательства */
+.proofSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.proofLabel {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.proofArea {
+  min-height: 80px;
+  background: #f8f9fc;
+  border: 2px dashed #d0d0e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 16px;
+}
+
+.proofArea:hover {
+  border-color: #6c5ce7;
+  background: #f0f0fa;
+}
+
+.proofPlaceholder {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
+
+/* Примечание - желтый фон */
+.noteSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  background: #fff9e6;
+  border-radius: 12px;
+  border-left: 4px solid #ffd700;
+  flex-shrink: 0;
+}
+
+.noteLabel {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.noteText {
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Кнопки */
+.buttonRow {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.checkButton {
+  flex: 1;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.checkButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+.voteButton {
+  padding: 14px 24px;
+  background: white;
+  color: #6c5ce7;
+  border: 2px solid #6c5ce7;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.voteButton:hover {
+  background: #f0f0fa;
+  transform: translateY(-2px);
+}

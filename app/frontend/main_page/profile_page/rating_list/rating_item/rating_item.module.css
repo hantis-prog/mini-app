@@ -1,0 +1,53 @@
+/* Элемент рейтинга */
+.ratingItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #f8f9fc;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Текущий пользователь выделен */
+.ratingItem.currentUser {
+  background: linear-gradient(135deg, #f0f0fa 0%, #e8e8f5 100%);
+  border: 2px solid #6c5ce7;
+}
+
+/* Место в рейтинге */
+.place {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Информация об игроке */
+.playerInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Имя игрока */
+.playerName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Уровень игрока */
+.playerLevel {
+  font-size: 11px;
+  color: #888;
+}
+
+/* XP игрока */
+.playerXp {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c5ce7;
+}

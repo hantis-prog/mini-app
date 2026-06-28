@@ -1,0 +1,39 @@
+.aboutButton {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease-in-out;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.aboutButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.aboutText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .aboutButton {
+    bottom: 90px;
+    right: 16px;
+    padding: 10px 16px;
+  }
+
+  .aboutText {
+    font-size: 12px;
+  }
+}

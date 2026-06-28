@@ -1,0 +1,52 @@
+/* Контейнер списка прошедших заданий со скроллом */
+.pastTasksContainer {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 8px;
+  min-height: 0;
+}
+
+/* Кастомный скроллбар */
+.pastTasksContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pastTasksContainer::-webkit-scrollbar-track {
+  background: #f0f0f5;
+  border-radius: 10px;
+}
+
+.pastTasksContainer::-webkit-scrollbar-thumb {
+  background: #c0c0d0;
+  border-radius: 10px;
+}
+
+.pastTasksContainer::-webkit-scrollbar-thumb:hover {
+  background: #a0a0b0;
+}
+
+/* Пустое состояние */
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.emptyText {
+  font-size: 16px;
+  color: #888;
+  font-weight: 500;
+  margin: 0;
+}

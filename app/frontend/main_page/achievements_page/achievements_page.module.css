@@ -1,0 +1,38 @@
+/* Контейнер страницы достижений */
+.achievementsContainer {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Левая колонка: ровно 50% ширины */
+.leftColumn {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  overflow: hidden; /* ← важно: не даем колонке растягиваться */
+}
+
+/* Правая колонка: оставшиеся 50% */
+.rightColumn {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 900px) {
+  .achievementsContainer {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+  }
+}
